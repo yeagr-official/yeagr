@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#F2EFE8;}
+</style>
+</helmet>
+
+<!-- ==== brand mark defs (faceted metallic star) ==== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="sLight" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.5" stop-color="#E4E8EE"/>
+      <stop offset="1" stop-color="#BFC6D1"/>
+    </linearGradient>
+    <linearGradient id="sDark" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#9BA1AD"/>
+      <stop offset="0.55" stop-color="#787F8C"/>
+      <stop offset="1" stop-color="#565D6B"/>
+    </linearGradient>
+    <symbol id="star-silver" viewBox="0 0 100 100">
+      <polygon points="50,8 40.6,37.06 50,50" fill="url(#sLight)"/>
+      <polygon points="89.95,37.02 59.4,37.06 50,50" fill="url(#sLight)"/>
+      <polygon points="74.69,83.97 65.22,54.94 50,50" fill="url(#sLight)"/>
+      <polygon points="25.31,83.97 50,66 50,50" fill="url(#sLight)"/>
+      <polygon points="10.05,37.02 34.78,54.94 50,50" fill="url(#sLight)"/>
+      <polygon points="50,8 59.4,37.06 50,50" fill="url(#sDark)"/>
+      <polygon points="89.95,37.02 65.22,54.94 50,50" fill="url(#sDark)"/>
+      <polygon points="74.69,83.97 50,66 50,50" fill="url(#sDark)"/>
+      <polygon points="25.31,83.97 34.78,54.94 50,50" fill="url(#sDark)"/>
+      <polygon points="10.05,37.02 40.6,37.06 50,50" fill="url(#sDark)"/>
+    </symbol>
+    <symbol id="star-flat" viewBox="0 0 100 100">
+      <polygon points="50,8 59.4,37.06 89.95,37.02 65.22,54.94 74.69,83.97 50,66 25.31,83.97 34.78,54.94 10.05,37.02 40.6,37.06" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div style="font-family:'Hanken Grotesk',sans-serif;color:#15223F;background:#F2EFE8;min-height:100vh;">
+
+  <!-- ============ HERO ============ -->
+  <section data-screen-label="Hero" style="position:relative;background:#11203D;color:#F6F4EF;padding:96px 72px 104px;overflow:hidden;">
+    <svg style="position:absolute;right:-90px;top:50%;transform:translateY(-50%);width:560px;height:560px;opacity:0.06;" aria-hidden="true"><use href="#star-silver"/></svg>
+    <svg style="position:absolute;left:-140px;bottom:-180px;width:380px;height:380px;opacity:0.04;" aria-hidden="true"><use href="#star-silver"/></svg>
+    <div style="position:relative;max-width:1120px;margin:0 auto;">
+      <div style="font-family:'Space Mono',monospace;font-size:13px;letter-spacing:0.32em;color:#C8954E;text-transform:uppercase;">Brand Identity &nbsp;/&nbsp; Logo Explorations</div>
+      <div style="display:flex;align-items:center;gap:32px;margin-top:40px;">
+        <svg style="width:104px;height:104px;filter:drop-shadow(0 8px 22px rgba(0,0,0,0.45));flex:none;" aria-hidden="true"><use href="#star-silver"/></svg>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:124px;line-height:0.9;letter-spacing:-0.05em;">yeagr</div>
+      </div>
+      <p style="margin-top:40px;max-width:600px;font-size:20px;line-height:1.55;color:#C9D2E2;">On October 14, 1947, Chuck Yeager flew faster than sound — calm, precise, certain. <span style="color:#F6F4EF;">yeagr</span> brings that same fearless clarity to the way the world travels.</p>
+      <div style="margin-top:44px;display:flex;gap:14px;flex-wrap:wrap;">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.18em;color:#11203D;background:#F6F4EF;padding:9px 16px;border-radius:2px;">PREMIUM · ASPIRATIONAL</span>
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.18em;color:#F6F4EF;border:1px solid rgba(246,244,239,0.3);padding:9px 16px;border-radius:2px;">PIONEER SPIRIT</span>
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.18em;color:#F6F4EF;border:1px solid rgba(246,244,239,0.3);padding:9px 16px;border-radius:2px;">MAVERICK</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOUR DIRECTIONS ============ -->
+  <section data-screen-label="Four Directions" style="max-width:1240px;margin:0 auto;padding:80px 72px 24px;">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:1px solid #D8D3C7;padding-bottom:22px;">
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:34px;letter-spacing:-0.02em;">Four directions</h2>
+      <div style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.18em;color:#8A8470;text-transform:uppercase;">One symbol · the general's star · explored four ways</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px;">
+
+      <!-- DIR 01 — Mach One -->
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(17,32,61,0.08);overflow:hidden;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid #EEEBE3;">
+          <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#C8954E;">DIRECTION 01</span>
+          <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#15223F;background:#F2EFE8;padding:5px 11px;border-radius:2px;">RECOMMENDED</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:22px;height:230px;background:#F7F5F0;">
+          <svg style="width:78px;height:78px;flex:none;filter:drop-shadow(0 5px 14px rgba(17,32,61,0.18));" aria-hidden="true"><use href="#star-silver"/></svg>
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:62px;letter-spacing:-0.05em;color:#15223F;">yeagr</span>
+        </div>
+        <div style="padding:22px 24px 26px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:20px;">Mach One — the horizontal lockup</div>
+          <p style="margin-top:8px;font-size:15px;line-height:1.55;color:#5A6172;">The star leads, the wordmark follows. Confident, balanced, instantly premium. The everyday workhorse for headers, boarding passes and signatures.</p>
+        </div>
+      </div>
+
+      <!-- DIR 02 — The Boom -->
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(17,32,61,0.08);overflow:hidden;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid #EEEBE3;">
+          <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#C8954E;">DIRECTION 02</span>
+          <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#8A8470;">STACKED</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;height:230px;background:#F7F5F0;">
+          <div style="position:relative;width:96px;height:78px;display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 120 90" style="position:absolute;inset:0;width:100%;height:100%;" aria-hidden="true">
+              <path d="M8 78 Q60 14 112 78" fill="none" stroke="#C8954E" stroke-width="2.4" stroke-linecap="round" opacity="0.85"/>
+              <path d="M24 80 Q60 32 96 80" fill="none" stroke="#15223F" stroke-width="2.4" stroke-linecap="round" opacity="0.35"/>
+            </svg>
+            <svg style="width:58px;height:58px;position:relative;filter:drop-shadow(0 4px 10px rgba(17,32,61,0.18));" aria-hidden="true"><use href="#star-silver"/></svg>
+          </div>
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:46px;letter-spacing:-0.05em;color:#15223F;">yeagr</span>
+        </div>
+        <div style="padding:22px 24px 26px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:20px;">The Boom — stacked with the shockwave</div>
+          <p style="margin-top:8px;font-size:15px;line-height:1.55;color:#5A6172;">A vapor-cone arc rises behind the star — the moment of breaking through. Vertical and centered for app splash, profiles and social avatars.</p>
+        </div>
+      </div>
+
+      <!-- DIR 03 — The Glyph -->
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(17,32,61,0.08);overflow:hidden;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid #EEEBE3;">
+          <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#C8954E;">DIRECTION 03</span>
+          <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#8A8470;">APP ICON</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:30px;height:230px;background:#F7F5F0;">
+          <div style="width:118px;height:118px;border-radius:27px;background:linear-gradient(150deg,#1B2E52,#0E1B33);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(17,32,61,0.32);flex:none;">
+            <svg style="width:66px;height:66px;filter:drop-shadow(0 3px 9px rgba(0,0,0,0.4));" aria-hidden="true"><use href="#star-silver"/></svg>
+          </div>
+          <div style="width:58px;height:58px;border-radius:14px;background:linear-gradient(150deg,#1B2E52,#0E1B33);display:flex;align-items:center;justify-content:center;flex:none;">
+            <svg style="width:32px;height:32px;" aria-hidden="true"><use href="#star-silver"/></svg>
+          </div>
+        </div>
+        <div style="padding:22px 24px 26px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:20px;">The Glyph — the standalone star</div>
+          <p style="margin-top:8px;font-size:15px;line-height:1.55;color:#5A6172;">The star alone, sealed in midnight navy. Scales from a 1024px app tile down to a 16px favicon and never loses its identity.</p>
+        </div>
+      </div>
+
+      <!-- DIR 04 — Heritage Badge -->
+      <div style="background:#fff;border-radius:4px;box-shadow:0 1px 3px rgba(17,32,61,0.08);overflow:hidden;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid #EEEBE3;">
+          <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#C8954E;">DIRECTION 04</span>
+          <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#8A8470;">EMBLEM</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;height:230px;background:#F7F5F0;">
+          <svg viewBox="0 0 200 200" style="width:178px;height:178px;filter:drop-shadow(0 8px 20px rgba(17,32,61,0.22));" aria-hidden="true">
+            <defs>
+              <path id="arcTop" d="M36,100 A64,64 0 0 1 164,100"/>
+              <path id="arcBot" d="M40,100 A60,60 0 0 0 160,100"/>
+            </defs>
+            <circle cx="100" cy="100" r="94" fill="#11203D"/>
+            <circle cx="100" cy="100" r="87" fill="none" stroke="#C8954E" stroke-width="1.4"/>
+            <circle cx="100" cy="100" r="83" fill="none" stroke="rgba(246,244,239,0.18)" stroke-width="0.8"/>
+            <text font-family="'Space Mono',monospace" font-size="17" font-weight="700" letter-spacing="6" fill="#F6F4EF"><textPath href="#arcTop" startOffset="50%" text-anchor="middle">YEAGR</textPath></text>
+            <text font-family="'Space Mono',monospace" font-size="8.5" letter-spacing="4" fill="#C8954E"><textPath href="#arcBot" startOffset="50%" text-anchor="middle">BREAK THE BARRIER · MACH 1</textPath></text>
+            <use href="#star-silver" x="63" y="58" width="74" height="74"/>
+          </svg>
+        </div>
+        <div style="padding:22px 24px 26px;">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:20px;">Heritage — the mission patch</div>
+          <p style="margin-top:8px;font-size:15px;line-height:1.55;color:#5A6172;">A modern flight emblem in the spirit of the cadet squadron badge. Reserved for loyalty tiers, luggage tags and moments that reward the traveler.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ RECOMMENDED — DEVELOPED ============ -->
+  <section data-screen-label="Recommended" style="max-width:1240px;margin:0 auto;padding:64px 72px 96px;">
+    <div style="border-top:1px solid #D8D3C7;padding-top:48px;">
+      <div style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.24em;color:#C8954E;text-transform:uppercase;">Recommended direction</div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:34px;letter-spacing:-0.02em;margin-top:12px;">01 · Mach One, developed</h2>
+      <p style="max-width:640px;margin-top:14px;font-size:17px;line-height:1.6;color:#5A6172;">The primary lockup carries the whole system. Here it is across the surfaces it has to survive — light, dark, single-colour and small.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:24px;margin-top:40px;">
+      <!-- primary on light -->
+      <div style="background:#F7F5F0;border-radius:4px;border:1px solid #E7E2D7;display:flex;align-items:center;justify-content:center;gap:24px;padding:64px;">
+        <svg style="width:88px;height:88px;flex:none;filter:drop-shadow(0 5px 14px rgba(17,32,61,0.18));" aria-hidden="true"><use href="#star-silver"/></svg>
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:70px;letter-spacing:-0.05em;color:#15223F;">yeagr</span>
+      </div>
+      <!-- primary on navy -->
+      <div style="background:#11203D;border-radius:4px;display:flex;align-items:center;justify-content:center;gap:20px;padding:64px;">
+        <svg style="width:70px;height:70px;flex:none;filter:drop-shadow(0 5px 14px rgba(0,0,0,0.4));" aria-hidden="true"><use href="#star-silver"/></svg>
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:56px;letter-spacing:-0.05em;color:#F6F4EF;">yeagr</span>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-top:24px;">
+      <!-- mono navy -->
+      <div style="background:#fff;border:1px solid #E7E2D7;border-radius:4px;padding:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;">
+        <div style="display:flex;align-items:center;gap:14px;color:#15223F;">
+          <svg style="width:40px;height:40px;" aria-hidden="true"><use href="#star-flat"/></svg>
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:34px;letter-spacing:-0.05em;color:#15223F;">yeagr</span>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.18em;color:#8A8470;">MONO · NAVY</span>
+      </div>
+      <!-- mono reversed -->
+      <div style="background:#11203D;border-radius:4px;padding:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;">
+        <div style="display:flex;align-items:center;gap:14px;color:#F6F4EF;">
+          <svg style="width:40px;height:40px;" aria-hidden="true"><use href="#star-flat"/></svg>
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:34px;letter-spacing:-0.05em;color:#F6F4EF;">yeagr</span>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.18em;color:rgba(246,244,239,0.5);">MONO · REVERSED</span>
+      </div>
+      <!-- brass on navy -->
+      <div style="background:#11203D;border-radius:4px;padding:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;">
+        <div style="display:flex;align-items:center;gap:14px;color:#C8954E;">
+          <svg style="width:40px;height:40px;" aria-hidden="true"><use href="#star-flat"/></svg>
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:34px;letter-spacing:-0.05em;color:#C8954E;">yeagr</span>
+        </div>
+        <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.18em;color:rgba(200,149,78,0.7);">ACCENT · BRASS</span>
+      </div>
+    </div>
+
+    <!-- scale / favicon row -->
+    <div style="margin-top:24px;background:#fff;border:1px solid #E7E2D7;border-radius:4px;padding:40px 44px;">
+      <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.2em;color:#8A8470;margin-bottom:30px;">THE GLYPH AT SCALE — 1024 → 16</div>
+      <div style="display:flex;align-items:flex-end;gap:40px;flex-wrap:wrap;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+          <div style="width:96px;height:96px;border-radius:22px;background:linear-gradient(150deg,#1B2E52,#0E1B33);display:flex;align-items:center;justify-content:center;"><svg style="width:54px;height:54px;" aria-hidden="true"><use href="#star-silver"/></svg></div>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;color:#8A8470;">512</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+          <div style="width:64px;height:64px;border-radius:15px;background:linear-gradient(150deg,#1B2E52,#0E1B33);display:flex;align-items:center;justify-content:center;"><svg style="width:36px;height:36px;" aria-hidden="true"><use href="#star-silver"/></svg></div>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;color:#8A8470;">180</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+          <div style="width:40px;height:40px;border-radius:9px;background:linear-gradient(150deg,#1B2E52,#0E1B33);display:flex;align-items:center;justify-content:center;"><svg style="width:23px;height:23px;" aria-hidden="true"><use href="#star-silver"/></svg></div>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;color:#8A8470;">64</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+          <div style="width:24px;height:24px;border-radius:5px;background:linear-gradient(150deg,#1B2E52,#0E1B33);display:flex;align-items:center;justify-content:center;"><svg style="width:15px;height:15px;color:#E4E8EE;" aria-hidden="true"><use href="#star-flat"/></svg></div>
+          <span style="font-family:'Space Mono',monospace;font-size:10px;color:#8A8470;">16</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer style="background:#11203D;color:rgba(246,244,239,0.55);padding:32px 72px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.14em;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+    <span>YEAGR.COM</span>
+    <span>LOGO EXPLORATIONS · v1</span>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
