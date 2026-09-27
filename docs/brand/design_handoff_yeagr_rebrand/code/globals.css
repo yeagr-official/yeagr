@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   YEAGR REBRAND — drop-in replacement for app/globals.css
+   Repaints the surface, selection, grid, route line and panels
+   from the old lime/blue system to navy + silver + brass.
+   ============================================================ */
+
+:root {
+  color-scheme: light;
+  background: #f2efe8;          /* Contrail White */
+  color: #11203d;              /* Altitude Navy ink */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  /* warm contrail wash instead of the old blue radial */
+  background:
+    radial-gradient(circle at top left, rgba(200, 149, 78, 0.10), transparent 28rem),
+    linear-gradient(180deg, #f2efe8 0%, #e9e4d8 100%);
+  color: #11203d;
+  /* body font wired to next/font variable */
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Headings use the display face (Space Grotesk) everywhere, no per-tag
+   className changes needed. */
+h1, h2, h3, h4 {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: #c8954e;          /* Brass (was lime green) */
+  color: #fdfbf7;
+}
+
+.flight-grid {
+  background-image:
+    linear-gradient(rgba(17, 32, 61, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 32, 61, 0.055) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.route-line {
+  position: relative;
+}
+
+.route-line::before {
+  position: absolute;
+  inset: 50% 0 auto;
+  height: 1px;
+  content: "";
+  /* navy -> brass instead of blue -> lime */
+  background: linear-gradient(90deg, rgba(17, 32, 61, 0.14), #11203d, rgba(200, 149, 78, 0.9));
+}
+
+.route-line::after {
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 0;
+  width: 9px;
+  height: 9px;
+  content: "";
+  border-radius: 999px;
+  background: #c8954e;          /* Brass node */
+  box-shadow: 0 0 0 5px rgba(200, 149, 78, 0.2);
+}
+
+.scan-card {
+  border: 1px solid rgba(17, 32, 61, 0.1);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.58)),
+    rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(18px);
+}
+
+.dark-panel {
+  /* deep navy panel with a brass glow (was blue glow on near-black) */
+  background:
+    radial-gradient(circle at 100% 0%, rgba(200, 149, 78, 0.22), transparent 18rem),
+    linear-gradient(135deg, #11203d 0%, #0b1426 100%);
+}
